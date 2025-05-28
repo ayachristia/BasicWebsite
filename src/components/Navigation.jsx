@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router"
-import "/src/style.scss"
 import navLogo from "/navLogo.svg"
 import Button from "./UniversalComponents/Button"
 import { GiHamburgerMenu } from "react-icons/gi";
