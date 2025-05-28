@@ -1,7 +1,7 @@
-@use '/src/base.scss';
-@use '/src/styles/critical';
-@use '/src/styles/variables';
-@use '/src/styles/molecules';
-@use '/src/components/navigation';
-@use '/src/components/Home/home';
-@use '/src/components/Contact/contact';
+@use '../base.scss';
+@use './critical';
+@use './variables';
+@use './molecules';
+@use '../components/navigation';
+@use '../components/Home/home';
+@use '../components/Contact/contact';
