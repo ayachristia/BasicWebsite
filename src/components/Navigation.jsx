@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router"
-import "/src/styles/style.scss"
 import navLogo from "/navLogo.svg"
 import Button from "./UniversalComponents/Button"
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -15,7 +14,7 @@ export default function Navigation() {
                         <div className="d-flex align-items-center gap-2">
                             
                             <img src={navLogo} alt="Logo image" className="h-100"/>
-                        <p className="mb-0 text-black">JK Developers</p>
+                        <p className="mb-0 text-black">Jk Developers</p>
                             
                         
                         </div></Link>
