@@ -1,5 +1,5 @@
 import Hero from "../components/Home/Hero"
-import "../Styles/style.scss"
+import "../styles/style.scss"
 
 
 export default function Home(){
