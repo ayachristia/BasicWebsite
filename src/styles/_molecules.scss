@@ -1,0 +1,30 @@
+.button{
+    font-family: 'Inter Bold', sans-serif;
+    font-size: 18px;
+    color: white;
+    &--primary{
+        padding: 19px 30px;
+        background-color: #3D63EA;
+        border-radius: 5px;
+        width: fit-content;
+    }
+    &--navigation{
+        padding: 14px 25px;
+        background: linear-gradient(to right, #3d0c6e, #7417d0);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &--navigation2{
+        padding: 14px 25px;
+        background: linear-gradient(to right, #3d0c6e, #7417d0);
+        border-radius: 5px;
+        cursor: pointer;
+        width: fit-content;
+    }
+}
+
+.form-submit{
+    font-family: 'Inter Light',sans-serif;
+        font-size: clamp(12px,3vw,14px);
+        background-color: #3D63EA !important;
+}
