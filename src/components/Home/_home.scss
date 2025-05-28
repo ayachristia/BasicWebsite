@@ -1,0 +1,69 @@
+@use '/src/Styles/variables.scss' as *;
+
+.hero{
+    .container{
+        max-width: 1145px;
+        margin: 0 auto;
+        padding-right: 11px;
+
+    }
+    &__header{
+        // display: flex;
+        // flex-direction: column;
+        max-width: 531px;
+        height: 355px;
+    }
+    &__headline{
+        line-height: 45px;
+        margin-bottom: 28px;
+        @media(max-width:768px){
+            
+            margin-bottom: 10px;
+            line-height: 1.5rem;
+        }
+        &--top{
+            display: block;
+            font-family: 'Inter Light', sans-serif;
+            font-size: clamp(20px, 3vw, 32px);
+        }
+        &--bottom{
+            font-size: clamp(24px, 3vw, 40px);
+            font-weight: 700;
+            font-family: 'Inter Xtra Bold', sans-serif;
+        }
+        
+        &--soft{
+            background: linear-gradient(to right, #DE4396, #0D1C9F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Inter Bold', sans-serif;
+        }
+        &--dark{
+            background: linear-gradient(to right, #406AFF, #F7666F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+    &__text{
+        font-family: 'Inter Regular', sans-serif;
+        font-size: 18px;
+        color: $colorSubtext;
+        margin-bottom: 74px;
+        @media(max-width:768px){
+            margin-bottom: 2rem;
+
+        }
+    }
+    
+    &__imgcontainer{
+        max-width: 614px;
+        max-height: 546px;
+    }
+    &__img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
