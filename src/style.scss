@@ -1,5 +1,6 @@
-@use './styles/base.scss';
-@use './styles/molecules';
-@use './components/Home/home';
-@use './components/navigation';
-@use './components/Contact/contact';
+@use 'styles/critical';
+@use 'styles/base.scss';
+@use 'styles/molecules';
+@use 'components/Home/home';
+@use 'components/navigation';
+@use 'components/Contact/contact';
