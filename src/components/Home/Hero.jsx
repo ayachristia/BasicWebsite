@@ -8,7 +8,7 @@ export default function Hero() {
                 <div className="row align-items-center justify-content-center">
 
                     <div className="col-12 order-2 col-md-5 order-md-1">
-                        <header className="hero__header">
+                        <header className="hero__header text-center text-md-start">
                              <h1 className="hero__headline">
                                  <span className="hero__headline--top">
                                  Great <span className="hero__headline--soft">Product</span> is

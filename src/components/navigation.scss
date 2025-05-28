@@ -38,6 +38,9 @@
         &.active {
             font-weight: bold;
         }
+        &:hover{
+            font-weight: bold;
+        }
     }
 
     @media (max-width: 991.98px) {

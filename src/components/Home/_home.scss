@@ -48,7 +48,7 @@
     }
     &__text{
         font-family: 'Inter Regular', sans-serif;
-        font-size: 18px;
+        font-size: clamp(14px,3vw,18px);
         color: $colorSubtext;
         margin-bottom: 74px;
         @media(max-width:768px){
