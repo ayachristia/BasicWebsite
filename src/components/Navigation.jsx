@@ -11,11 +11,14 @@ export default function Navigation() {
             <div className="container-fluid h-100">
                 <div className="row align-items-center h-100">
 
-                    <div className="col-auto">
+                    <div className="col-auto"><Link to="/">
                         <div className="d-flex align-items-center gap-2">
-                        <img src={navLogo} alt="Logo image" className="h-100"/>
-                        <p className="mb-0">JK Developers</p>
-                        </div>
+                            
+                            <img src={navLogo} alt="Logo image" className="h-100"/>
+                        <p className="mb-0 text-black">JK Developers</p>
+                            
+                        
+                        </div></Link>
                     </div>
 
                     <div className="col d-flex justify-content-end justify-content-lg-center">

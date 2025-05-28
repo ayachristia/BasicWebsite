@@ -1,3 +1,7 @@
 $colorGrey: rgb(77, 76, 76);
 $colorPrimary: #1A202C;
 $colorSubtext: #4A5568;
+
+$fontHeadline: clamp(24px, 3vw, 40px);
+$fontSubheadline: clamp(20px, 3vw, 32px);
+$fontFocustext: clamp(18px, 2vw, 28px)
