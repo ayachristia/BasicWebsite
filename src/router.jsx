@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./styles/style.scss"
+import "./style.scss"
 
 
 
