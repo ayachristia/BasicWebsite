@@ -2,10 +2,15 @@ import { Link, NavLink } from "react-router"
 import navLogo from "/navLogo.svg"
 import Button from "./UniversalComponents/Button"
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 export default function Navigation() {
+
+    const [backdropForOpenMobile, setBackdropForOpenMobile] = useState(false);
     return (
         <>
+    <div className="nav-backdrop" style={{display: backdropForOpenMobile ? 'block' : 'none'}}></div>
+
         <header className="primaryHeader">
             <div className="container-fluid h-100">
                 <div className="row align-items-center h-100">
@@ -28,6 +33,7 @@ export default function Navigation() {
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#navbarNav"
+                                    onClick={()=> setBackdropForOpenMobile(!backdropForOpenMobile)}
                                     >
                                     <GiHamburgerMenu className="navbar-toggler-icon"/>
                                     </button>

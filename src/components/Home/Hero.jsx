@@ -5,7 +5,7 @@ export default function Hero() {
         <>
         <section className="hero">
             <div className="hero__container">
-                <div className="row align-items-center justify-content-center">
+                <div className="row align-items-center justify-content-center p-4 p-md-0">
 
                     <div className="col-12 order-2 col-md-5 order-md-1">
                         <header className="hero__header text-center text-md-start">
