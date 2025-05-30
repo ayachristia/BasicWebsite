@@ -21,10 +21,13 @@
         cursor: pointer;
         width: fit-content;
     }
+    // @media (max-width: 991.98px){
+    //      &--navigation{
+    //         display: none;
+    //     }
+    //     &--navigation2{
+    //         display: block;
+    //     }
+    // }
 }
 
-.form-submit{
-    font-family: 'Inter Light',sans-serif;
-        font-size: clamp(12px,3vw,14px);
-        background-color: #3D63EA !important;
-}
