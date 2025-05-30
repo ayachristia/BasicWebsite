@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <>
         <section className="hero">
-            <div className="container">
+            <div className="hero__container">
                 <div className="row align-items-center justify-content-center">
 
                     <div className="col-12 order-2 col-md-5 order-md-1">

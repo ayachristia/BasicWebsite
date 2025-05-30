@@ -1,0 +1,34 @@
+@use '/src/styles/variables.scss' as *;
+
+
+.contact{
+
+    &__headline{
+        font-size: $fontHeadline;
+    }
+    &__subtext{
+        font-size: $fontFocustext;
+    }
+    &__container{
+        max-width: 1145px;
+        margin: 0 auto;
+    }
+    &__form{
+        font-family: 'Inter regular', sans-serif;
+        max-width: 400px !important;
+        .form-group label{
+        font-size: clamp(14px,3vw,16px);
+
+        }
+        .form-group input::placeholder, .form-group textarea::placeholder{
+        font-size: clamp(10px,3vw,12px);
+        padding-left: 2px;
+        font-style: italic;
+        }
+        .form-group input, .form-group textarea{
+            font-size: clamp(10px,3vw,12px);
+            padding: 4px;
+            border: 1px solid $colorGrey !important;
+        }
+    }
+}

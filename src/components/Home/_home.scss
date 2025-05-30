@@ -1,10 +1,9 @@
-@use '/src/Styles/variables.scss' as *;
+@use '/src/styles/variables.scss' as *;
 
 .hero{
-    .container{
+    &__container{
         max-width: 1145px;
         margin: 0 auto;
-        padding-right: 11px;
 
     }
     &__header{
