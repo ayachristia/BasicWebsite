@@ -9,6 +9,40 @@ import { useCarouselPosition } from "./Hooks/useCarouselPosition";
 import { useIntersectionObserver } from "./Hooks/useIntersectionObserver";
 
 export default function Carousel() {
+    // --------------
+    // Add these state variables at the top of your Carousel component
+const [touchStart, setTouchStart] = useState(null);
+const [touchEnd, setTouchEnd] = useState(null);
+
+// Add this function in your Carousel component
+const handleTouchStart = (e) => {
+  setTouchEnd(null);
+  setTouchStart(e.targetTouches[0].clientX);
+};
+
+const handleTouchMove = (e) => {
+  setTouchEnd(e.targetTouches[0].clientX);
+};
+
+const handleTouchEnd = () => {
+  if (!touchStart || !touchEnd) return;
+  
+  const distance = touchStart - touchEnd;
+  const minSwipeDistance = 50; // Minimum distance for a swipe
+  
+  if (distance > minSwipeDistance) {
+    // Swiped left - go to next slide
+    showSlides(1);
+  } else if (distance < -minSwipeDistance) {
+    // Swiped right - go to previous slide
+    showSlides(-1);
+  }
+};
+
+// Add touch events to your carousel section
+    // --------------
+
+
     const [slideIndex, setSlideIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const carouselRef = useRef(null)
@@ -98,6 +132,9 @@ export default function Carousel() {
         className="carousel d-flex flex-column align-items-center position-relative" 
         tabIndex={0}
         ref={carouselRef}
+         onTouchStart={handleTouchStart}
+    onTouchMove={handleTouchMove}
+    onTouchEnd={handleTouchEnd}
         >
                                     <h1 className="carousel__headline">Services we offer</h1>
 
