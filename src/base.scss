@@ -11,6 +11,7 @@ body{
 }
 #root {
   width: min(100%, 1440px);
+  overflow: hidden;
   margin: 0 auto;
   margin-top: 148px;
   @media(max-width:768px){
