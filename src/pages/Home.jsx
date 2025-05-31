@@ -1,4 +1,4 @@
-import Carousel from "../components/Home/Carousel"
+import Carousel from "../components/Home/Carousel/Carousel"
 import Hero from "../components/Home/Hero"
 
 
