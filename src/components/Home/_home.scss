@@ -87,37 +87,11 @@
     width: 100%;
     height: 400px;
     margin: 0 auto;
-    
-    // Default for 5 slides (very wide screens)
-    max-width: calc(373px * 4);
-    
-    @media (max-width: 1400px) {
-        max-width: calc(373px * 3); // 3 slides
-    }
-    
-    @media (max-width: 1024px) {
-        max-width: calc(373px * 2); // 2 slides
-    }
-    
-    @media (max-width: 768px) {
-        max-width: 373px; // 1 slide
-    }
 }
- &__track{
-    transition: transform 0.5s ease-in-out;
- }
+
  
  &__slide{
     min-width: 373px !important;
-   
-    flex: none;
-    @media (max-width: 1024px) {
-            width: 50% !important;
-        }
-        
-    @media (max-width: 768px) {
-            min-width: 100% !important;
-        }
 
     &--focused {
        

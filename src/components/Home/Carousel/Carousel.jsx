@@ -79,7 +79,7 @@ const handleTouchEnd = () => {
         } else if (slidesPerView === 2) {
             targetSlideIndex = targetOriginalIndex + startOffset;
         } else {
-            targetSlideIndex = targetOriginalIndex + startOffset - 1;
+            targetSlideIndex = targetOriginalIndex + startOffset - 2;
         }
         
         setSlideIndex(targetSlideIndex);
